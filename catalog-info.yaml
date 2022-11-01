@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hin-tanzu-spring-app
+  description: Hin tanzu app
+  tags:
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=hin-tanzu-spring-app'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: defualt-team
